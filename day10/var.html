@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>변수의 선언과 사용</title>
+</head>
+<body>
+    <script>
+        //  이름이 name인 변수를 선언
+        var name;
+        name = "손흥민"; //값을 대입
+
+        // 이름이 grade인 변수를 선언
+        // var grade;
+        // grade = 2;
+
+        var grade = 2; // 변수의 선언과 초기화
+
+        // var class = 3; // 예약어는 변수로 사용할 수 없다.        
+        
+        var schoolclass = 3;
+
+        var ismerried = false; // 블리언 자료형
+
+        // '='는 대입연산자, '+':문자인 경우는 연결연산자
+        document.write("이름 : " + name + '<br>');
+        document.write("학년 : " + grade + "<br>");
+        document.write("반 : " + schoolclass + "<br>");
+        document.write("결혼여부 : " + ismerried + "<br>");
+
+        //자료형 알려주는 함수
+        console.log(typeof(name)); //string
+        console.log(typeof(grade)); //number
+        console.log(typeof(schoolclass)); //number
+        console.log(typeof(ismerried)); //boolean
+        
+    </script>
+</body>
+</html>

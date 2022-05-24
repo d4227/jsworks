@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for문 예제</title>
+</head>
+<body>
+    <script>
+        //1부터 5까지 곱하는 프로그램
+        //let i = 0;
+        let facto = 1; // 곱셈이니까 초기값은 1
+
+        for(let i =1; i <=5; i++){
+            facto = facto * i;  
+            // facto *= i; 
+            console.log("i=" + i + ",facto=" + facto);
+        }
+        document.write("i=" + i + "<br>");
+        document.write("결과는 " + facto);
+        // i = 1, ture, 1 = 1 * 1
+        // i = 2, ture, 2 = 1 * 2
+        // i = 3, ture, 6 = 2 * 3
+        // i = 4, ture, 24 = 6 * 4
+        // i = 5, ture, 120 = 24 * 5
+        // i = 6  false
+        
+    </script>
+</body>
+</html>

@@ -6,7 +6,7 @@
 
 //입력
 //var age = 30;
-var age = Number(prompt("나이을 입력하시오"))
+var age = Number(prompt("나이를 입력하시오"))
 var change = 0;
 
 //연산 및 출력

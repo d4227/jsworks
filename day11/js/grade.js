@@ -1,8 +1,8 @@
 //학점계산프로그램
 
 
-let score = 55;
-let grade = "";
+let score = parseInt(prompt("점수를 입력하세요."));
+let grade = ""; // 문지형 변수 초기화 - 문자이니까 "" 쌍따옴표!!, 숫자는 0 으로 지정
 
 
 if(score >= 90 && score <= 100){

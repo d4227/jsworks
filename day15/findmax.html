@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>최대, 최소값 찾기</title>
+</head>
+<body>
+    <script>
+        // 최대값 찾기
+        //입력
+        let number =[17, 33, 25, 92, 56, 81];
+        let maxV = number[0];   //17
+
+        //연산
+        for(let i = 0; i < number.length; i++){
+            //값의 비교
+            if(maxV < number[i]){
+               maxV = number[i];
+            }
+        }
+        
+    /* 반복 조건문 나열식
+    
+    17 < 33,  maxV= 33
+    33 < 25,  maxV= 33
+    33 < 92,  maxV= 92
+    92 < 56,  maxV= 92
+    92 < 81,  maxV= 92  //  최대값은 92
+    */
+
+        //출력
+        document.write(maxV);
+
+
+        document.write("<br>" +"=============" + "<br>");
+
+
+
+
+        
+    // 최소값 찾기
+   //연산
+   let minV =number[0];
+   for(let i = 0; i < number.length; i++){
+            //값의 비교
+            if(minV > number[i]){
+               minV = number[i];
+            }
+        }
+
+        //출력
+        document.write(minV);
+
+
+    </script>
+</body>
+</html>

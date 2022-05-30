@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>indexOf() 함수</title>
+    <script>
+        //일치하면 위치를 알려줌, 일치하지 않으면 -1이 나옴.
+        // 문자열은 특별한 1차원 배열이다.
+        let str = "Hello world, welcome world";
+
+        console.log(str.indexOf("world")); //6
+        console.log(str.indexOf("sky")); // -1
+        console.log(str.indexOf("Hello")); // 0
+        // 중복된 문자는 뒤에서부터 찾으수 있다.
+        console.log(str.indexOf("welcome")); // 13
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

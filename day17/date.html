@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date - 날짜/시간 객체</title>
+</head>
+<body>
+    <h2>Date 객체</h2>
+    <p>현재 날짜(오늘)와 시간 표시</p>
+    <p id="demo"></p>
+    
+    
+    <p>특정한 날짜(오늘)와 시간 표시</p>
+    <p id="display"></p>
+
+    <script>
+        let date = new Date(); // 오늘 날짜는 매개변수 생략
+        document.getElementById("demo").innerHTML = date.toLocaleString();
+
+
+        let theday = new Date(2022, 4, 9, 15, 20); // 특정한 날짜(년, 월(원하는날 선택시 -1해야함 예)5월이면 4로 기재.), 일, 시간, 일)
+        //let theday = new Date("2022-5-9"); // 문자로 전환하여 "2022-5-9" => "  " 큰 따옴표안에 기재.
+        document.getElementById("display").innerHTML = theday.toLocaleString();
+
+        /* 
+        console.log(date); //Tue May 31 2022 10:05:32 GMT+0900 (한국 표준시)
+        console.log(date.toLocaleDateString()); //2022. 5. 31. 날짜
+        console.log(date.toLocaleTimeString()); //오전 10:06:28 시간
+        console.log(date.toLocaleString()); //2022. 5. 31. 오전 10:07:07 날짜+시간
+        */
+
+    </script>
+
+</body>
+</html>
+
+

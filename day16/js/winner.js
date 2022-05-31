@@ -5,7 +5,8 @@ let winner = new Array(5); // 당첨자수 5명 배열 선언
 
 if(member === null){
     document.write("<p>입력이 취소되었습니다.</p>");
-}else{
+}
+else{ //member != null
     //발표
     document.write("<p>전체 응모자수 : " + member + "명</p>")
     document.write("<p>당첨자 : ")
@@ -17,6 +18,7 @@ let pickedOne = Math.floor(Math.random()*member) + 1;
     for(let j = 0; j < i; j++){
         if(winner[j] === winner[i]){ // 이전 인덱스와 값이 일치하면 
             i--;    // 인덱스를 1감소 
+            // break;
         }
     }
 }
@@ -30,4 +32,17 @@ document.write("</p>");
 }
 
 
+/*
+예) 응모자가 20명일때
+i =0 , winner[0]=4, j=0, false
+i =1 , winner[1]=14, j=0,  winner[0]=4, j=1, false
+i =2 , winner[2]=11, j=0,  winner[0]=4, j=1, winner[1]=14, j=2, false
+i =3 , winner[3]=11, j=0,  winner[0]=4, j=1, winner[1]=14, j=2, winner[2]=11  
+i =3 , winner[3]=5, j=0,  winner[0]=4, j=1, winner[1]=14, j=2, winner[2]=11 j=3, 
+i =4 , winner[4]=18, j=0,  winner[0]=4, j=1, winner[1]=14, j=2, winner[2]=11 j=4, 
 
+
+
+
+
+*/

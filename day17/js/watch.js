@@ -11,8 +11,13 @@ function watch(){
 
 
 // 실행함수
-setInterval(function(){
+let timer = setInterval(function(){
     const date = new Date();
     let now = date.toLocaleTimeString(); //시간표시
     document.getElementById("display").innerHTML = now;
 },1000);
+
+// 시간을 정지
+function myStop(){
+    clearInterval(timer);
+}

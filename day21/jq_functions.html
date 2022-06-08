@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주요 탐색 함수</title>
+    <style>
+        *{margin: 10px;}
+    </style>
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#m1").children().css("border","3px solid red"); // children()는 자식 요소 선택
+            $("#m2").children().children("span").css("border","3px solid orange"); 
+            $("#m2 span").parent().css("border","3px solid black"); // parent()는 부모 요소 선택
+            $("#m4 > span.m").nextUntil("em").css("border","3px solid green"); 
+            $("#m5 > span").filter(".m").css("border","3px solid blue"); //filter()는 해당 요소(id,class선택자) 선택됨.
+            $("#m6 > div").has("span").css("border","3px solid navy"); //has()는 가지고 있는 요소 선택
+            // $("#m6 > div").has("span").next().css("border","3px solid yellow");
+            $("#m6 > .d1").next().css("border","3px solid pink"); // next()는 다음 요소 선택
+        });
+
+    </script>
+</head>
+<body>
+    <div id="m1">
+        <a href="#">내용1_1</a><span>내용1_2</span>
+    </div>
+    <div id="m2">
+        <div>
+            <a href="#">내용2_1</a><span>내용2_2</span>
+        </div>
+    </div>
+    <div id="m3">
+        <div>
+            <span>내용3_1</span>
+        </div>
+    </div>
+    <div id="m4">
+        <span class="m">내용4_1</span><span>내용4_2</span><span>내용4_3</span><em>내용4_4</em>
+    </div>
+    <div id="m5">
+        <span class="m">내용5_1</span><span>내용5_2</span><span>내용5_3</span>
+    </div>
+    <div id="m6">
+        <div class="d1"><span>내용6_1</span></div>
+        <div>내용6_2</div>
+    </div>
+</body>
+</html>
+

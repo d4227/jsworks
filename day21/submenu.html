@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>서브 메뉴 만들기</title>
     <style>
-        .wrap .ul1{display: none;}
+        .wrap .ul1, .ul2{display: none;}
         .wrap a{text-decoration: none;}
     </style>
     <script src="./js/jquery-3.6.0.js"></script>
@@ -15,16 +15,32 @@
             //학교안내
             $(".btn1 a").on("mouseover",function(){
                 let a = $(this); // 이벤트가 일어날 대상
-                a.parent().next().show();
+                a.parent().next().show(); //ul1을 열림
                 a.css("background","pink")
+                //$(".ul1").css("display","block");
+               
             })
             $(".btn1 a").on("mouseout",function(){
                 let a = $(this); // 이벤트가 일어날 대상
-                a.parent().next().hide();
-                a.css("background","white")
-            })
-        });
+                a.parent().next().hide(); //ul1을 숨김
+                a.css("background","white");
+                //$(".ul1").css("display","none");
+            });
 
+            //학교생활
+            $(".btn2 a").on("click",function(){
+                //let a = $(this);
+                //a.parent().next().show();
+                $(".ul2").css("display","block");
+            });
+            $(".btn2 a").on("mouseout",function(){
+                //let a = $(this);
+                //a.parent().next().show();
+                $(".ul2").css("display","none");
+            });
+
+        });
+       
     </script>
 </head>
 <body>

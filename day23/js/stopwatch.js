@@ -18,7 +18,7 @@ function stopWatch(){
 // 재생 - play
 $("#startbtn").click(function(){
     if(sw){
-        $(".fa").css("color","#f60")
+        $(".fa-solid").css("color","#f60")
         this.style.color = "#555";
         sw = false;  
 
@@ -57,7 +57,7 @@ $("#startbtn").click(function(){
 //일지중지 - pause
 $("#pausebtn").click(function(){
     if(time != 0){
-        $(".fa").css("color","#f60")
+        $(".fa-solid").css("color","#f60")
         this.style.color = "#555";
         clearInterval(timer);  // timer 중지
         sw = true; //false => true로 변경
